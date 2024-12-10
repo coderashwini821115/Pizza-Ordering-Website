@@ -22,7 +22,7 @@ const BuildUrPizza = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/build")
+      .get("https://pizza-ordering-website-backend-7rst.onrender.com/build")
       .then((res) => {
         console.log(res);
         setBuild(res.data);

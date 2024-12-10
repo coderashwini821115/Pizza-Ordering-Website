@@ -12,7 +12,7 @@ const OrderPizza = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/order")
+      .get("https://pizza-ordering-website-backend-7rst.onrender.com/order")
       .then((res) => {
         console.log(res);
         setOrder(res.data);
